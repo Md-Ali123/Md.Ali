@@ -119,15 +119,15 @@
 */
 
 
-/* Answer 1*/ 
-let num = 49;
-if(num %7 == 0){
-    console.log("Yes, Number is divisible by 7");
+// /* Answer 1*/ 
+// let num = 49;
+// if(num %7 == 0){
+//     console.log("Yes, Number is divisible by 7");
     
-}else{
-    console.log("No, Number is not divisible by 7");
+// }else{
+//     console.log("No, Number is not divisible by 7");
     
-}
+// }
 
 // /* Ans 2*/
 // let number = 1;
@@ -176,6 +176,15 @@ if(num %7 == 0){
 //         console.log(sum);
 //     }
 // }
+/*ans 6 can also*/ 
+// let sum = 0;
+// for(let b = 1;b<=100;b++){
+//     if(b%2 != 0){
+//         sum +=b;
+//     }
+// }
+// console.log(sum);
+
 
 /* Ans 7*/
 // let count = 0;
@@ -186,3 +195,23 @@ if(num %7 == 0){
 // }
 // console.log(count);
 
+/* */
+// let num = 14;
+// let endingCondition = Math.ceil(num/2);
+// for(let i = 1;i<=endingCondition;i++){
+//     if(num%i==0){
+//         console.log(i);
+        
+//     }
+// }console.log(num);
+
+let num = 36;
+let sqrt = Math.sqrt(num);
+for(let i=1; i<= sqrt; i++){
+     if(num%i==0){
+        console.log(i);
+        if(num/i != i){
+        console.log(num/i);
+        }
+    }
+}
