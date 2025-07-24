@@ -7,6 +7,7 @@
 // number2 = temp;
 // console.log("After swapping values are:",number1,number2);
 
+
 // /* Leap year code */
 // let year = prompt("Enter a year");
 // if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)){
