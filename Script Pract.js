@@ -195,7 +195,7 @@
 // }
 // console.log(count);
 
-/* */
+/* OPTIMIZATION*/
 // let num = 14;
 // let endingCondition = Math.ceil(num/2);
 // for(let i = 1;i<=endingCondition;i++){
@@ -205,13 +205,63 @@
 //     }
 // }console.log(num);
 
-let num = 36;
-let sqrt = Math.sqrt(num);
-for(let i=1; i<= sqrt; i++){
-     if(num%i==0){
-        console.log(i);
-        if(num/i != i){
-        console.log(num/i);
-        }
-    }
+// let num = 36;
+// let sqrt = Math.sqrt(num);
+// for(let i=1; i<= sqrt; i++){
+//      if(num%i==0){
+//         console.log(i);
+//         if(num/i != i){
+//         console.log(num/i);
+//         }
+//     }
+// }
+
+
+// /*Count Digit and Palindrome */
+// let num = 121
+// let rev = 0;
+// let count = 0;
+// let originalnumber = num;
+// while(num > 0){
+//     let lastDigit = num%10;
+//     rev = rev * 10 + lastDigit;
+//     num = Math.floor(num/10);
+//     count++
+// }
+// if(originalnumber == rev){
+//     console.log("Number is Palindrome ");
+//  }else{
+//     console.log("Not a Palindrome");
+    
+//  }
+// console.log("Original Number ",originalnumber);
+// console.log("Reverse number ",rev);
+// console.log("Count ",count);
+// console.log("Value of given variable num",num);
+
+/* Sum of digits and its square*/
+// let num = 456;
+// let sum = 0;
+// while(num > 0){
+//     let lastDigit = num%10;
+//     sum = sum + lastDigit**2;
+//     num = Math.floor(num/10);
+// }
+// console.log(sum);
+
+/*Armstrong Number*/
+let num = 153;
+let sumOfCubes = 0;
+let originalnumber = num;
+while(num>0){
+    let lastDigit = num%10;
+    sumOfCubes = sumOfCubes + lastDigit**3;
+    num = Math.floor(num/10);
+}
+if(sumOfCubes==originalnumber){
+    console.log("Number is Armstrong",originalnumber);
+    console.log("Sum of cubes",originalnumber);
+}else{
+    console.log("Number is not Armstrong",originalnumber);
+    console.log("Sum of cubes",sumOfCubes);
 }
