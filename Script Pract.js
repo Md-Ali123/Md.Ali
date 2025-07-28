@@ -270,13 +270,15 @@
 // let str1 = "",'',`` 3 types of string
 
 /*Bio */
-let bio = "hello World";
+let bio = "Hello World";
 console.log(bio.length);
 console.log(bio.charAt(4));
 console.log(bio.indexOf("o"));
 console.log(bio.lastIndexOf("o"));
 console.log(bio.toLowerCase());
 console.log(bio.toUpperCase());
+console.log(bio);
 
 
 
+    
