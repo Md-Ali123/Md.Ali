@@ -250,18 +250,33 @@
 // console.log(sum);
 
 /*Armstrong Number*/
-let num = 153;
-let sumOfCubes = 0;
-let originalnumber = num;
-while(num>0){
-    let lastDigit = num%10;
-    sumOfCubes = sumOfCubes + lastDigit**3;
-    num = Math.floor(num/10);
-}
-if(sumOfCubes==originalnumber){
-    console.log("Number is Armstrong",originalnumber);
-    console.log("Sum of cubes",originalnumber);
-}else{
-    console.log("Number is not Armstrong",originalnumber);
-    console.log("Sum of cubes",sumOfCubes);
-}
+// let num = 153;
+// let sumOfCubes = 0;
+// let originalnumber = num;
+// while(num>0){
+//     let lastDigit = num%10;
+//     sumOfCubes = sumOfCubes + lastDigit**3;
+//     num = Math.floor(num/10);
+// }
+// if(sumOfCubes==originalnumber){
+//     console.log("Number is Armstrong",originalnumber);
+//     console.log("Sum of cubes",sumOfCubes);
+// }else{
+//     console.log("Number is not Armstrong",originalnumber);
+//     console.log("Sum of cubes",sumOfCubes);
+// }
+
+/* String */
+// let str1 = "",'',`` 3 types of string
+
+/*Bio */
+let bio = "hello World";
+console.log(bio.length);
+console.log(bio.charAt(4));
+console.log(bio.indexOf("o"));
+console.log(bio.lastIndexOf("o"));
+console.log(bio.toLowerCase());
+console.log(bio.toUpperCase());
+
+
+
