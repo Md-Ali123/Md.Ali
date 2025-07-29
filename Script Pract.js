@@ -279,7 +279,7 @@
 // let concatString = str1 + str2;
 // let constr = str1.concat(str1,str2,str3,"and so on")
 
-let username = "Hello World\n";
+let username = "Hello World";
 console.log(username.length);
 console.log(username.charAt(4));
 console.log(username.indexOf("o"));
@@ -287,7 +287,7 @@ console.log(username.lastIndexOf("o"));
 console.log(username.toLowerCase());
 console.log(username.toUpperCase());
 console.log(username.slice(6));
-console.log(username.split(" "));
+console.log(username.split(""));
 console.log(username.substring(7));
 console.log(username.replace("Hello","hi"));            
 console.log(username.replaceAll("o","0"));
