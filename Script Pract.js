@@ -267,18 +267,39 @@
 // }
 
 /* String */
-// let str1 = "",'',`` 3 types of string
+// let str1 = "String type 1 Double inverted comma";
+// let str2 = 'String type 2 Single inverted comma';
+// let str3 = `String type 3 Backtick`;
 
-/*Bio */
-let bio = "Hello World";
-console.log(bio.length);
-console.log(bio.charAt(4));
-console.log(bio.indexOf("o"));
-console.log(bio.lastIndexOf("o"));
-console.log(bio.toLowerCase());
-console.log(bio.toUpperCase());
-console.log(bio);
+// console.log(str1);
+// console.log(str2);
+// console.log(str3);
+
+/*Concatination */
+// let concatString = str1 + str2;
+// let constr = str1.concat(str1,str2,str3,"and so on")
+
+let username = "Hello World\n";
+console.log(username.length);
+console.log(username.charAt(4));
+console.log(username.indexOf("o"));
+console.log(username.lastIndexOf("o"));
+console.log(username.toLowerCase());
+console.log(username.toUpperCase());
+console.log(username.slice(6));
+console.log(username.split(" "));
+console.log(username.substring(7));
+console.log(username.replace("Hello","hi"));            
+console.log(username.replaceAll("o","0"));
+console.log(username.repeat(5));
+console.log(username.trim());
+console.log(username.length);
+console.log(username.trimEnd().length);
+let num = 12345678;
+console.log(typeof num);
+ 
 
 
 
-    
+
+
