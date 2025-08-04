@@ -195,126 +195,13 @@
 // }
 // console.log(count);
 
-/* OPTIMIZATION*/
-// let num = 14;
-// let endingCondition = Math.ceil(num/2);
-// for(let i = 1;i<=endingCondition;i++){
-//     if(num%i==0){
-//         console.log(i);
-        
-//     }
-// }console.log(num);
 
-// let num = 36;
-// let sqrt = Math.sqrt(num);
-// for(let i=1; i<= sqrt; i++){
-//      if(num%i==0){
-//         console.log(i);
-//         if(num/i != i){
-//         console.log(num/i);
-//         }
-//     }
-// }
+/* Reverse a number */
+let num = 123;
+rev = 0;
 
 
-// /*Count Digit and Palindrome */
-// let num = 121
-// let rev = 0;
-// let count = 0;
-// let originalnumber = num;
-// while(num > 0){
-//     let lastDigit = num%10;
-//     rev = rev * 10 + lastDigit;
-//     num = Math.floor(num/10);
-//     count++
-// }
-// if(originalnumber == rev){
-//     console.log("Number is Palindrome ");
-//  }else{
-//     console.log("Not a Palindrome");
-    
-//  }
-// console.log("Original Number ",originalnumber);
-// console.log("Reverse number ",rev);
-// console.log("Count ",count);
-// console.log("Value of given variable num",num);
 
-/* Sum of digits and its square*/
-// let num = 456;
-// let sum = 0;
-// while(num > 0){
-//     let lastDigit = num%10;
-//     sum = sum + lastDigit**2;
-//     num = Math.floor(num/10);
-// }
-// console.log(sum);
-
-/*Armstrong Number*/
-// let num = 153;
-// let sumOfCubes = 0;
-// let originalnumber = num;
-// while(num>0){
-//     let lastDigit = num%10;
-//     sumOfCubes = sumOfCubes + lastDigit**3;
-//     num = Math.floor(num/10);
-// }
-// if(sumOfCubes==originalnumber){
-//     console.log("Number is Armstrong",originalnumber);
-//     console.log("Sum of cubes",sumOfCubes);
-// }else{
-//     console.log("Number is not Armstrong",originalnumber);
-//     console.log("Sum of cubes",sumOfCubes);
-// }
-
-/* String */
-// let str1 = "String type 1 Double inverted comma";
-// let str2 = 'String type 2 Single inverted comma';
-// let str3 = `String type 3 Backtick`;
-
-// console.log(str1);
-// console.log(str2);
-// console.log(str3);
-
-/*Concatination */
-// let concatString = str1 + str2;
-// let constr = str1.concat(str1,str2,str3,"and so on")
-
-// let username = "Hello World";
-// console.log(username.length);
-// console.log(username.charAt(4));
-// console.log(username.indexOf("o"));
-// console.log(username.lastIndexOf("o"));
-// console.log(username.toLowerCase());
-// console.log(username.toUpperCase());
-// console.log(username.slice(6));
-// console.log(username.split(""));
-// console.log(username.substring(7));
-// console.log(username.replace("Hello","hi"));            
-// console.log(username.replaceAll("o","0"));
-// console.log(username.repeat(5));
-// console.log(username.trim());
-// console.log(username.length);
-// console.log(username.trimEnd().length);
-// let num = 12345678;
-// console.log(typeof num);
- 
-
-let pass = prompt("Enter a password");
-if(pass.length >= 8 ){
-    if(pass.includes("0") || pass.includes("1") ||pass.includes("2") ||pass.includes("3") ||
-       pass.includes("4") ||pass.includes("5") ||pass.includes("6") || pass.includes("7") ||
-       pass.includes("8") ||pass.includes("9") ){
-        if(pass.includes("@") || pass.includes("#")) {
-        console.log("Entered password is correct");
-        }else{
-        console.log("Password should contain atleast one special character");
-         }
-    }else{
-    console.log("Password should contain atlest one number");
-    }
-}else{
-    console.log("Password should be contain atleast 8 characters");
-}
 
 
 
