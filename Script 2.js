@@ -64,18 +64,63 @@
 // let fact = factorial(5);
 // console.log(fact);
 
-/* Prime Numbers*/
-function isPrime(n){
-    if(n <= 1){
-        return false;
-    }
-    for(let i = 2;i<=n;i++){
-        if(n%1 == 0){
-            return false;
-        }
-    }
-    return true;
-} 
+// /* Prime Numbers*/
+// function isPrime(n){
+//     if(n <= 1){
+//         return false;
+//     }
+//     for(let i = 2;i<=n;i++){
+//         if(n%1 == 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// } 
 
-let primeHai = isPrime(5);
-console.log(primeHai);
+// let primeHai = isPrime(5);
+// console.log(primeHai);
+
+
+// function isArmstrong(num){
+//     let originalNumber = num;
+//     let sumOfCube = 0;
+//     while(num > 0){
+//         let lastDigit = num%10;
+//         sumOfCube = sumOfCube+lastDigit**3;
+//         num = Math.floor(num/10);
+//     }
+//     return originalNumber === sumOfCube;
+// }
+
+
+// let a = isArmstrong(123);
+// console.log(a);
+
+
+// function isPalindrome(n){
+//     let originalNumber = n;
+//     let rev = 0;
+//     while(n > 0){
+//         let lastDigit = n%10;
+//         rev = rev*10 + lastDigit;
+//         n = Math.floor(n/10);
+//     }
+//     return originalNumber === rev;
+// }
+
+// let b = isPalindrome(121);
+// console.log(b);
+
+
+function isReverse(n){
+    let originalNumber = n;
+    let rev = 0;
+    while(n > 0){
+        let lastDigit = n%10;
+        rev = rev*10 + lastDigit;
+        n = Math.floor(n/10);
+    }
+    return rev;
+}
+let c = isReverse(12345678);
+console.log(c);
