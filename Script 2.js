@@ -112,15 +112,50 @@
 // console.log(b);
 
 
-function isReverse(n){
-    let originalNumber = n;
-    let rev = 0;
-    while(n > 0){
-        let lastDigit = n%10;
-        rev = rev*10 + lastDigit;
-        n = Math.floor(n/10);
-    }
-    return rev;
-}
-let c = isReverse(12345678);
-console.log(c);
+// function isReverse(n){
+//     let originalNumber = n;
+//     let rev = 0;
+//     while(n > 0){
+//         let lastDigit = n%10;
+//         rev = rev*10 + lastDigit;
+//         n = Math.floor(n/10);
+//     }
+//     return rev;
+// }
+// let c = isReverse(12345678);
+// console.log(c);
+
+// let nameArr = ["Mohd","Ali","Shaikh"]
+// let secondArr = ["Dawood","Ahmed"]
+// console.log(nameArr.at(2));
+// console.log(nameArr.concat(secondArr));
+// console.log(nameArr);
+// console.log(secondArr);
+// console.log(nameArr.includes("Ali"));
+// console.log(nameArr.indexOf("Ali"));
+// let allElement = nameArr.join(" ");
+// console.log(allElement);
+// console.log(nameArr.lastIndexOf("Shaikh"));
+// let newLength = nameArr.push("Armaan","Nadeem")
+// console.log(newLength);
+// let poppedElement = nameArr.pop()
+// console.log(poppedElement);
+// console.log(nameArr.reverse());
+// console.log(nameArr.shift());
+// console.log(nameArr.slice());
+// console.log(nameArr.sort());
+// console.log(nameArr.some());
+// console.log(nameArr.splice(1,1));
+// console.log(nameArr.unshift("Ali123"));
+// console.log(nameArr);
+
+
+
+let numArr = ("Danish","Ali","Armaan")
+let itr = numArr.values()
+let values = itr.next();
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());
+console.log(itr.next());

@@ -146,7 +146,7 @@
 // console.log(str2);
 // console.log(str3);
 
-// /*Concatination */
+// /*Concatination */ means addition
 // let concatString = str1 + str2;
 // let constr = str1.concat(str1,str2,str3,"and so on")
 
