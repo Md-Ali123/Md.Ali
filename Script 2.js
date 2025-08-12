@@ -151,11 +151,38 @@
 
 
 
-let numArr = ("Danish","Ali","Armaan")
-let itr = numArr.values()
-let values = itr.next();
-console.log(itr.next());
-console.log(itr.next());
-console.log(itr.next());
-console.log(itr.next());
-console.log(itr.next());
+// let numArr = ("Danish","Ali","Armaan")
+// let itr = numArr.values()
+// let values = itr.next();
+// console.log(itr.next());
+// console.log(itr.next());
+// console.log(itr.next());
+// console.log(itr.next());
+// console.log(itr.next());
+
+
+
+let numberarr = [1,2,3,4,5,6,7,8,9,10];
+
+// function add(m,n){
+//     return m+n;
+// }
+// function substract(m,n){
+//     return m-n;
+// }
+// function operation(m,n,callbackfn){
+//     return callbackfn(m,n);
+// }
+// console.log(operation(10,8,substract));
+
+
+
+// function printElement(num1){
+//     console.log();
+// }
+
+numberarr.forEach((x) => {
+    console.log(x);
+    
+
+})
