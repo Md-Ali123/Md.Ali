@@ -162,7 +162,7 @@
 
 
 
-let numberarr = [1,2,3,4,5,6,7,8,9,10];
+// let numberarr = [1,2,3,4,5,6,7,8,9,10];
 
 // function add(m,n){
 //     return m+n;
@@ -181,8 +181,54 @@ let numberarr = [1,2,3,4,5,6,7,8,9,10];
 //     console.log();
 // }
 
-numberarr.forEach((x) => {
-    console.log(x);
-    
+// numberarr.forEach((x) => {
+//     console.log(x);
 
-})
+
+// })
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+// let evenNumber = []
+// let sum = 0
+// function printElement(element){
+//     sum += element;
+// }
+// arr.forEach(printElement)
+// console.log("Sum of number",sum);
+
+// function printElementWithIndex(element,index){
+//     console.log(`Element is ${element} and it's index is ${index}` );
+    
+// }
+// arr.forEach(printElementWithIndex)
+
+
+// function isEven(x){
+//     return x%2===0;
+// }
+// // let evenNumber = arr.filter(isEven);
+// let evenNumber = arr.filter(x => x%2===0);
+// console.log(evenNumber);
+
+
+// function cubeNumber(x){
+//     return x**3;
+// }
+// // let cubes = arr.map(cubeNumber);
+// let cubes = arr.map(x=> x**3);
+// console.log(cubes);
+
+
+// let student = {
+//     "name" : "Md.Ali",
+//     "age" : 18,
+//     "isPassed" : true,
+//     "phoneNumber" : 1122334455,
+//     "subjects" : ["Javascript","Java","Python"]
+
+// }
+
+// let s = student['subjects'];
+// s.filter(x=> x.includes("Java")).map(x=> x.toUpperCase()).forEach(x=> console.log(x))
+
