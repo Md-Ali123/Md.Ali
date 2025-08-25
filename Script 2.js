@@ -232,3 +232,16 @@ let arr = [1,2,3,4,5,6,7,8,9,10];
 // let s = student['subjects'];
 // s.filter(x=> x.includes("Java")).map(x=> x.toUpperCase()).forEach(x=> console.log(x))
 
+
+// asynchronus //
+
+
+let date = new Date();
+console.log(date.getDate());
+console.log(date.getFullYear());
+console.log(date.getMonth());
+console.log(date.getDay());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+
