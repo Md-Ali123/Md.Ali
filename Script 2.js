@@ -236,12 +236,30 @@ let arr = [1,2,3,4,5,6,7,8,9,10];
 // asynchronus //
 
 
-let date = new Date();
-console.log(date.getDate());
-console.log(date.getFullYear());
-console.log(date.getMonth());
-console.log(date.getDay());
-console.log(date.getHours());
-console.log(date.getMinutes());
-console.log(date.getSeconds());
+// let date = new Date();
+// console.log("Date:",date.getDate());
+// console.log("Year:",date.getFullYear());
+// console.log("Month:",date.getMonth()+1);
+// console.log("Day:",date.getDay());
+// console.log("Hours:",date.getHours());
+// console.log("Minutes:",date.getMinutes());
+// console.log("Seconds:",date.getSeconds());
 
+// console.log(date);
+
+const product =[
+    {name:"Apple",category:"Fruit"},
+    {name:"Banana",category:"Fruit"},
+    {name:"Carrot",category:"Vegetable"},
+    {name:"Lettuce",category:"Vegetable"}
+];
+const groupedProducts = product.reduce((result, product) =>{
+    if(!result[product.category]){
+        result[product.category] = [];
+
+    }
+    result[product.category].push(product.name);
+    return result
+},{});
+
+console.log(groupedProducts);
