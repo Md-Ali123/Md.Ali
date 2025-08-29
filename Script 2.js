@@ -317,3 +317,10 @@
 // ];
 // const totalValue = items.map(item => item.price*item.quantity).reduce((curr,prev)=> curr + prev);
 // console.log(totalValue);
+
+
+const profileDiv = document.getElementById('profile');
+console.log(profileDiv.innerText); // "John Doe"
+const cards = document.getElementsByClassName('card');
+console.log(cards.length); // 2
+console.log(cards[0].innerHTML); // "Card 1"
