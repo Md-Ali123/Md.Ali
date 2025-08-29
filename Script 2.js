@@ -188,7 +188,7 @@
 // })
 
 
-let arr = [1,2,3,4,5,6,7,8,9,10];
+// let arr = [1,2,3,4,5,6,7,8,9,10];
 // let evenNumber = []
 // let sum = 0
 // function printElement(element){
@@ -247,19 +247,73 @@ let arr = [1,2,3,4,5,6,7,8,9,10];
 
 // console.log(date);
 
-const product =[
-    {name:"Apple",category:"Fruit"},
-    {name:"Banana",category:"Fruit"},
-    {name:"Carrot",category:"Vegetable"},
-    {name:"Lettuce",category:"Vegetable"}
-];
-const groupedProducts = product.reduce((result, product) =>{
-    if(!result[product.category]){
-        result[product.category] = [];
 
-    }
-    result[product.category].push(product.name);
-    return result
-},{});
+// Question 5 //
+// const product =[
+//     {name:"Apple",category:"Fruit"},
+//     {name:"Banana",category:"Fruit"},
+//     {name:"Carrot",category:"Vegetable"},
+//     {name:"Lettuce",category:"Vegetable"}
+// ];
+// const groupedProducts = product.reduce((result, product) =>{
+//     if(!result[product.category]){
+//         result[product.category] = [];
 
-console.log(groupedProducts);
+//     }
+//     result[product.category].push(product.name);
+//     return result
+// },{});
+
+// console.log(groupedProducts);
+
+
+// // Question 6 //
+// const employees =[
+//     {name:"Alice",salary:50000},
+//     {name:"Bob",salary:60000},
+//     {name:"Charlie",salary:70000},
+//     {name:"David",salary:80000}
+// ];
+// const averageSalary = employees.map(employee => employee.salary)
+//     .reduce((acc,salary,index,array) => acc + salary / array.length, 0);
+
+// console.log(averageSalary);
+
+// // Question 7 //
+// const productInStock = [
+//     {id:1,name:"Laptop",isSold:false},
+//     {id:2,name:"Tablet",isSold:true},
+//     {id:3,name:"Smartphone",isSold:false},
+//     {id:4,name:"Headphones",isSold:true},
+// ];
+// const productThatAreNotSold = productInStock.filter(productInStock => !productInStock.isSold);
+// console.log(productThatAreNotSold);
+
+
+// // Question 8 //
+// const students =[
+//     {name:"John",grade:45},
+//     {name:"Jane",grade:80},
+//     {name:"Mark",grade:60},
+//     {name:"Paul",grade:30},
+     
+// ];
+
+// const passedStudent = students.filter(students => students.grade >= 50).map(students => students.name.toUpperCase());
+// console.log(passedStudent);
+
+// // Question 9 //
+// const numbers =[1,2,3,4,5];
+// const product = numbers.reduce((curr,prev) => curr + prev,0);
+// console.log(product);
+
+
+// // Question 10 //
+// const items = [
+//     {name:"Item A",price: 10,quantity:2},
+//     {name:"Item B",price: 5,quantity:5},
+//     {name:"Item C",price: 20,quantity:3},
+    
+// ];
+// const totalValue = items.map(item => item.price*item.quantity).reduce((curr,prev)=> curr + prev);
+// console.log(totalValue);
