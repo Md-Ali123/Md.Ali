@@ -324,3 +324,4 @@ console.log(profileDiv.innerText); // "John Doe"
 const cards = document.getElementsByClassName('card');
 console.log(cards.length); // 2
 console.log(cards[0].innerHTML); // "Card 1"
+jihuku
