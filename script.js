@@ -186,6 +186,11 @@
 //     }
 // }else{
 //     console.log("Password should be contain atleast 8 characters");
-// }
+//
 
+// const element = document.getElementById("profile");
+// console.log(element.textContent);
+// const elementTwo = document.getElementsByClassName("card");
+// console.log(elementTwo.length);
+// console.log(elementTwo[1].innerHTML);
 
