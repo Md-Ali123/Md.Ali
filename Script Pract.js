@@ -197,8 +197,8 @@
 
 
 /* Reverse a number */
-let num = 123;
-rev = 0;
+// let num = 123;
+// rev = 0;
 
 
 

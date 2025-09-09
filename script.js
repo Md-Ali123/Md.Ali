@@ -194,3 +194,6 @@
 // console.log(elementTwo.length);
 // console.log(elementTwo[1].innerHTML);
 
+/* JSON - Javascript Object Notation */
+/* API - Application Program Interface */
+/* Synchronus - line se, Asynchronus - kaise bhi */
