@@ -205,3 +205,70 @@
 /* Async = promise return karta hai */
 /* Await = async me hi use hota hai */
 
+
+// // Creating a promise
+// const myPromise = new Promise((resolve, reject) => {
+//   // Asynchronous operation
+//   const success = true;
+  
+//   if (success) {
+//     resolve('Operation completed successfully!');
+//   } else {
+//     reject(new Error('Operation failed!'));
+//   }
+// });
+
+// // Using the promise
+// myPromise
+//   .then(result => {
+//     console.log(result); // 'Operation completed successfully!'
+//   })
+//  .catch(error => {
+//     console.error(error); // Error: 'Operation failed!'
+//   });
+
+  function getUserData(userId) {
+  return new Promise((resolve, reject) => {
+    // Simulate API call
+    setTimeout(() => {
+      if (userId > 0) {
+        resolve({ id: userId, name: 'User ' + userId });
+      } else {
+        reject(new Error('Invalid user ID'));
+      }
+    }, 1000);
+  });
+}
+
+function getUserPosts(user) {
+  return new Promise((resolve, reject) => {
+    // Simulate API call
+    setTimeout(() => {
+      if (user.id > 0) {
+        resolve({
+          user,
+          posts: [
+            { id: 1, title: 'Post 1' },
+            { id: 2, title: 'Post 2' }
+          ]
+        });
+      } else {
+        reject(new Error('User has no posts'));
+      }
+    }, 1000);
+  });
+}
+getUserData(1)
+  .then(user => {
+    console.log('User data:', user);
+    return getUserPosts(user);
+  })
+  .then(userWithPosts => {
+    console.log('User posts:', userWithPosts.posts);
+  })
+  .catch(error => {
+    console.error('Error:', error.message);
+  })
+  .finally(() => {
+    console.log('Operation completed, successful or not');
+  });
