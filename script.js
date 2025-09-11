@@ -194,6 +194,14 @@
 // console.log(elementTwo.length);
 // console.log(elementTwo[1].innerHTML);
 
+
+
 /* JSON - Javascript Object Notation */
 /* API - Application Program Interface */
-/* Synchronus - line se, Asynchronus - kaise bhi */
+/* Synchronus - line se */
+/* Asynchronus - kaise bhi */
+
+
+/* Async = promise return karta hai */
+/* Await = async me hi use hota hai */
+
